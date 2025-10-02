@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.toPage {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(to right, #1e0b88, #796bc9);
+  background-size: 200% 200%; /* makes the gradient bigger so it can move */
+  border: none;
+  border-radius: 8px;
+  padding: 16px 32px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 108px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 0 16px #0000004d;
+  transition: all 0.4s ease-in-out;
+  animation: gradientShift 4s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.toPage:hover {
+  box-shadow: 0 0 48px #00000080;
+  transform: scale(1.05);
+}
